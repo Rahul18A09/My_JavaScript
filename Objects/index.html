@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        // (1)
+        // let car = { type: "Fiat", model: "500", color: "white" };
+        // console.log(car.color);
+
+        // (2) Using Dot Notation
+        // // add a new key 'city'
+        // const user = {
+        //     name: "rahul",
+        //     age: 22
+        // };
+
+
+        // user.city = 'Junagadh';
+        // user.bloodgroup = "A+";
+
+        // console.log(user);
+
+        // (3)Using Bracket Notation
+
+        // const user = {
+        //     name: 'Rahul',
+        //     age: 22
+        // };
+
+        // Add a new key with a space in its name
+        // user['favorite food'] = 'pizza';
+
+        // Add a key from a variable
+        // const newKey = 'country';
+        // user[newKey] = 'USA';
+
+        // console.log(user);
+
+        // const car = {
+        //     brand: 'Toyota',
+        //     model: 'Camry',
+        //     color: 'blue',
+        //     start: function () {
+        //         console.log('The car is starting.');
+
+        //     }
+        // };
+
+        // console.log(car.brand);
+        // console.log(car['model']);
+        // car.start();
+
+        // car.year = 2022;
+        // console.log(car.year);
+
+        // delete car.color;
+        // console.log(car.color);
+
+
+        // <==Accessing==>
+
+        // let car = {brand: 'Toyota', year: 2022};
+
+        // console.log(car.brand); //dot Notation
+        // console.log(car['year']); //bracket Notation
+
+        // <==Adding & Modify==>
+
+        // let car = { brand: "Toyota" };
+
+        // car.brand = 'Hundai';
+        // car.color = 'Black';
+        // console.log(car);
+
+        // <==Deleting==>
+
+        // let person = {name:"Rahul", age: 25};
+
+        // delete person.age;
+        // console.log(person);
+
+        // <==Methods in Objects==>
+
+        // let person = {
+        //     name: "Rahul",
+        //     age : 25,
+        //     greet: function (){
+        //         return "Hello, " + this.name;
+        //     }
+        // }
+
+        // console.log(person.greet());
+
+        // <==Iterating Objects==>
+
+        // a. for...in → Loop through keys
+        // let car  = {brand: "Tesla", model: "Tesla1", year:2025};
+        // for (let key in car){
+
+        //     console.log(key, car[key]);  
+        // }
+
+        // b. Object.keys() → Get all keys
+        // let car = { brand: "Tesla", model: "Tesla1", year: 2025 };
+
+        // console.log(Object.keys(car));
+
+        // c. Object.values() → Get all values
+        // let car = { brand: "Tesla", model: "Tesla1", year: 2025 };
+
+        // console.log(Object.values(car));
+
+
+        // d. Object.entries() → Get key-value pairs
+        // let car = { brand: "Tesla", model: "Tesla1", year: 2025 };
+        // console.log(Object.entries(car));
+
+
+        // <==Checking Properties==>
+
+        // a. in operator
+
+        // let person = {name:"Rahul", age:25, city:"Junagadh"};
+
+        // console.log("name" in person); //true
+        // console.log("age" in person);  //true
+        // console.log("blood group" in person); //false
+
+        // b. hasOwnProperty()
+
+        // let person = { name: "Rahul", age: 25, city: "Junagadh" };
+
+        // console.log(person.hasOwnProperty("city"));
+
+        // <==Object.assign()==>
+
+        // let obj1 = {a:1};
+        // let obj2 = {b:2};
+
+        // let merged = Object.assign({}, obj1, obj2);
+        // console.log(merged);
+
+        // <==Spread Operator ...==>
+
+        // let obj1 = { a: 1 };
+        // let obj2 = { b: 2 };
+
+
+        // let combined = { ...obj1, ...obj2 };
+        // console.log(combined);
+
+
+
+        // <==Object.freeze() & Object.seal()==>
+
+        // freeze → Cannot change or add properties.
+
+        // let user = {name: "Rahul"};
+        // Object.freeze(user);
+        // user.name = "John";
+        // console.log(user.name);
+
+        // seal → Can update existing properties but cannot add/delete.
+
+        // let person = {age: 20};
+        // Object.seal(person);
+        // person.age = 30;
+        // person.city = Delhi; // not added
+        // console.log(person);
+
+
+        // <==Destructuring Objects==>
+
+        // Extract values directly into veriables.
+
+        // let person  = {name:"Rahul", age:25};
+        // let {name, age} = person;
+        // console.log(name);
+        // console.log(age);
+
+        // <==Nested Objects==>
+
+        // let student = {
+        //     name: 'Rahul',
+        //     marks: {
+        //         math: 90,
+        //         science: 85
+
+        //     },
+        //     age: 25,
+        //     food: {
+        //         south: "dhosa",
+        //         gujarati: "thepla",
+        //         panjabi: "panir"
+
+        //     }
+
+        // };
+
+        // console.log(student.food);
+
+
+
+
+    </script>
+</body>
+
+</html>
