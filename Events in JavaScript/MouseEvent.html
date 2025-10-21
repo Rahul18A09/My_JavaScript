@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="box">Click Me!</button>
+
+
+    <script>
+        const box = document.getElementById("box");
+        box.addEventListener('click', () => {
+            box.style.background = 'red';
+            box.style.color = 'white';
+            box.style.width = '100px';
+            box.style.height = '50px';
+            box.style.padding = '10px';
+        });
+    </script>
+</body>
+
+</html>

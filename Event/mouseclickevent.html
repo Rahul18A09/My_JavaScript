@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <button id="myBtn">Click Me</button> -->
+    <button id="box">Click Me</button>
+
+    <script>
+        // const btn = document.getElementById("myBtn");
+        // btn.addEventListener("click", function () {
+        //     alert("Button was clicked!");
+        // });
+
+        const box = document.getElementById("box");
+
+        box.addEventListener("click", function () {
+            if (box.style.backgroundColor === "lightblue") {
+                box.style.backgroundColor = "lightgreen";
+                box.textContent = "Clicked!";
+            } else {
+                box.style.backgroundColor = "lightblue";
+                box.textContent = "Click Me";
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>

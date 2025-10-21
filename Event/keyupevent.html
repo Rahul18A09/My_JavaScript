@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Up Event</title>
+</head>
+
+<body>
+    <input type="text" id="myInput" placeholder="Type something...">
+    <p id="output"></p>
+
+    <script>
+
+        // window.addEventListener("load", function () {
+        //     console.log("All resources finished loading!");
+
+        // });
+
+        // window.addEventListener("resize", function () {
+        //     console.log("window resized!");
+
+        // })
+
+        window.addEventListener("scroll", function () {
+            console.log("Page is being scrolled");
+
+        });
+        document.getElementById("myInput").addEventListener("keyup", function (event) {
+            document.getElementById("output").innerText = "Key released: " + event.key + " | Code: " + event.code;
+        });
+    </script>
+</body>
+
+</html>

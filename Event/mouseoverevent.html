@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Over Event</title>
+</head>
+
+<body>
+    <button id="myBtn">Hover over me</button>
+    <p id="demo"></p>
+
+
+    <script>
+        let btn = document.getElementById("myBtn");
+
+        let demo = document.getElementById("demo");
+
+        btn.addEventListener("mouseover", function () {
+            demo.textContent = "Mouse is over the button!";
+        });
+
+        btn.addEventListener("mouseout", function(){
+            demo.textContent = "Mouse left the button!";
+        });
+    </script>
+</body>
+
+</html>

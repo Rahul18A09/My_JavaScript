@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in Js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- <button onclick="showMessage()">Click me</button> -->
+
+    <div onmouseover="changeColor(this)" onmouseout="resetColor(this)"
+        style="width: 150px; height: 50px; background: lightblue;">Hover Over me</div>
+
+    <script>  
+    function changeColor(x){
+        x.style.background = "orange";
+    }
+
+    function resetColor(x){
+        x.style.background = "lightblue";
+    }
+    </script>
+</body>
+
+</html>
