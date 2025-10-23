@@ -24,6 +24,6 @@ It covers everything from basic syntax to core concepts like functions, arrays, 
 🧑‍💻 Author
 
 [Rahul18A09]
-🌐 GitHub Profile
+🌐 GitHub:-https://github.com/Rahul18A09
 
 “Practice is the key to mastering JavaScript!”
