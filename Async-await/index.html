@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async-Await</title>
+</head>
+
+<body>
+    <h1>Hello</h1>
+
+    <script>
+
+
+        // async function getData() {
+        //     setTimeout(function () {
+        //         console.log("I am inside set Timeout block");
+
+        //     }, 3000);
+        // }
+
+        // let output = getData();
+
+
+        // **Callback Hell**
+
+        // function getData(dataId, getNextData) {
+        //     setTimeout(() => {
+
+        //         console.log("data", dataId);
+        //         if (getNextData) {
+        //             getNextData();
+        //         }
+        //     }, 3000);
+        // }
+
+        // getData(1, () => {
+        //     getData(2, () => {
+        //         getData(3,()=>{
+        //             getData(4);
+        //         });
+        //     });
+        // });
+
+        // fetch API
+
+        // async function getData() {
+        //     //get request-async operation
+            // let response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+
+        //     //perse json-async operation
+        //     let data = await response.json();
+        //     console.log(data);
+
+        // }
+
+        // getData();
+
+        const myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        const url = "https://jsonplaceholder.typicode.com/posts";
+
+        const options = {
+            method : "POST",
+            body: JSON.stringify({username:"Rahul Bharada"}),
+            headers: myHeaders
+
+        };
+
+        async function postData(){
+
+        }
+
+        async function postData(){
+            const response = await fetch(url, options);
+            let data = await response.json();
+            console.log("My data:", data);
+            
+        }
+
+        postData();
+
+    </script>
+</body>
+
+</html>

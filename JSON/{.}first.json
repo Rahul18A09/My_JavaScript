@@ -1,0 +1,13 @@
+{
+    "name"  : "Rahul",
+    "score" : 9.57,
+    "isAdmin" : false,
+    "license" : null,
+    "shop" : ["food", "clothes", "sunflawer oil"],
+    "object" : {
+        "name" : "Asha",
+        "marks" : 45,
+        "shopitem2" : ["food", "clothes", {"a" : true}]
+    }
+
+}
