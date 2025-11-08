@@ -2,7 +2,7 @@
 // let x = 10;
 
 // if (x >= 9){
-//     console.log(x);   
+//     console.log(x);
 // }
 
 // if else statement
@@ -144,7 +144,7 @@
 // let x = 6;
 // let y = 3;
 
-// let z = (x <10 && y > 0);
+// let z = (x < 8 && y < 0);
 // console.log(z);
 
 // let x = 6;
@@ -160,4 +160,78 @@
 
 // console.log(y);
 
+// <--JavaScript loops-->
+// the for loop
+
+// const cars = ["BMW", "Volvo","Saab"];
+// const len = cars.length;
+
+// let text = "";
+// for (let i = 0; i < cars.length ; i++){
+//     text += cars[i] + "<br>";
+// }
+
+// document.getElementById('loop').innerHTML = text;
+
+
+// let text = "";
+// for (let i = 0; i < 10 ; i++){
+//     text += "The number is " + i + "<br>";
+// }
+// document.getElementById('loop').innerHTML = text;
+
+// the while loop
+
+// const cars = ["BMW", "Volvo","Saab", "Ford"];
+// let i = 0;
+// let text = "";
+// while(cars[i]) {
+//     text += cars[i] + "<br>";
+//     i++;
+// }
+// document.getElementById("loop").innerHTML = text;
+
+// let text = "";
+// let i = 0;
+// while (i <= 10) {
+//     text += "The number is " + i + "<br>";
+//     i++;
+// }
+// document.getElementById('loop').innerHTML = text;
+
+// the do while loop
+
+// let text = "";
+// let i = 0;
+
+// do {
+//   text += "The number is " + i + "<br>";
+//   i++;
+// } while (i <= 10);
+
+// // console.log(text);
+// document.getElementById('loop').innerHTML = text;
+
+// let i = 15;
+// let x = "";
+
+// do {
+//     x += "The number is " + i;
+
+// }while(x  < 10);
+
+// console.log(x);
+// document.getElementById('loop').innerHTML= x;
+
+
+// <--JavaScript Continue-->
+
+// let i = 1;
+// let  text = "" ;
+
+// for (i = 1; i < 10; i++) {
+//     if (i === 3) {continue;}
+//         text += i*10 + "<br>";   
+// }
+// document.getElementById('demo').innerHTML = text;
 
