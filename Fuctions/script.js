@@ -1,26 +1,22 @@
-
 //(1)
-// function greet(name){               
+// function greet(name){
 //     return "Hello, " + name + "!";
 // }
 // console.log(greet("Rahul"));
 // console.log(greet("Student"));
 
-
 //(2)
-function add(a , b) {
-    return a + b ;
-}
-let result = add (5, 7);
-console.log("Sum is:", result);
-
+// function add(a , b) {
+//     return a + b ;
+// }
+// let result = add (5, 7);
+// console.log("Sum is:", result);
 
 //(3)
 // const multiply  = function ( x, y) {
 //     return x * y ;
 // };
 // console.log(multiply(4 , 3));
-
 
 //(4)
 // function greetUser(name = "Guest") {
@@ -30,7 +26,6 @@ console.log("Sum is:", result);
 // console.log(greetUser("Rahul"));
 // console.log(greetUser());
 
-
 //(5)
 // function myFunctions ( a , b ) {
 //     return a * b ;
@@ -38,7 +33,6 @@ console.log("Sum is:", result);
 
 //  let ans = myFunctions ( 4 , 3);
 // console.log(myFunctions(4 , 3));
-
 
 //(6)
 //   function multiply (a, b) {
@@ -48,13 +42,11 @@ console.log("Sum is:", result);
 // let x = multiply (5 , 3 );
 // console.log(x);
 
-
 //(7)
 // function sayMyName () {
-//     console.log("Rahul"); 
+//     console.log("Rahul");
 // }
 // sayMyName ();
-
 
 //(8)
 // function printCounting(){
@@ -64,20 +56,17 @@ console.log("Sum is:", result);
 // }
 
 // printCounting();
-   
 
 //(9)
 // function getAverage(num1, num2){
 //     let avg = (num1 + num2)/2;
 //     console.log("Average: ", avg);
-    
+
 // }
 
 // getAverage(3, 70);
 
-
 // <== return functions ==>
-
 
 //(10)
 // function getSum(a,b,c){
@@ -87,7 +76,6 @@ console.log("Sum is:", result);
 
 // let ans  = getSum(1, 2, 3);
 // console.log("Printing sum: ", ans);
-
 
 //(11)
 // function getMyName(firstname, lastname){
@@ -102,18 +90,16 @@ console.log("Sum is:", result);
 // let fullname = getMyName("Rahul" , "Bharada");
 // console.log("Full Name: ", fullname);
 
-
 //(12)
 // function getMultiplication (a , b){
 //     let ans = a*b;
 //     return ans;
-    // return a*b; // we can also write
+// return a*b; // we can also write
 // }
 // let ans = getMultiplication (2,10); // store in to variable
 // console.log(ans);
 
 // console.log(getMultiplication(2,10)); // or we can direct print like this
-
 
 //(13)
 // let getMultiplication = function (a,b){
@@ -122,7 +108,6 @@ console.log("Sum is:", result);
 
 // let ans = getMultiplication (2,20);
 // console.log(ans);
-
 
 //(14)
 // let squareNumber = function(num) {
@@ -133,7 +118,6 @@ console.log("Sum is:", result);
 // let ans = squareNumber (5);
 // console.log(ans);
 
-
 // <==  arrow function  ==>
 
 //(15)
@@ -141,5 +125,36 @@ console.log("Sum is:", result);
 //     let ans = x**y;
 //     return ans;
 // }
-
 // console.log(getExp(2,10));
+
+// const addNumber = function(num1 , num2){
+//     return "the result is" + " "  + num1 * num2;
+// }
+
+// console.log(addNumber(3,4));
+
+// arrow function
+
+// const addNumber = (num1, num2) => {
+//     return num1 + num2;
+
+// }
+//  console.log(addNumber(3,4));
+
+// const addNumber = (num1, num2) => num1 + num2;
+
+// const squareNumber = num => num * num;
+
+// console.log(squareNumber(6));
+// console.log(addNumber(5, 4));
+
+const greeting = () => {
+  return {
+    name: "Rahul",
+    age: 25,
+  };
+
+  return user;
+};
+
+console.log(greeting());
