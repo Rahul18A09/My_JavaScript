@@ -19,7 +19,16 @@
 
 // greet("Alice", sayGoodbye);
 
+// function myDisplayer(some) {
+//   document.getElementById("sum").innerHTML = some;
+// }
 
+// function myCalculator(num1, num2) {
+//   let sum = num1 + num2;
+//   return sum;
+// }
+// let result = myCalculator(10, 10);
+// myDisplayer(result);
 
 // Promises
 
@@ -36,4 +45,3 @@
 //   .catch(error=> {
 //     console.error("There was a problem with the fetch operation:", error);
 //   });
-
