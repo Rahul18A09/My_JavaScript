@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+
+<body>
+    <div align="center">
+        <h2>Add Record</h2>
+        <table border="1">
+            <input type="hidden" id="editId">
+            <tr>
+                <td>Task:-</td>
+                <td><input type="text" id="task"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" onclick="saveRecord()" value="submit"></td>
+            </tr>
+        </table>
+
+        <h2>View Record</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>TASK</td>
+                    <td>ACTION</td>
+                </tr>
+            </thead>
+            <tbody id="record"></tbody>
+
+
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
