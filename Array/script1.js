@@ -1,12 +1,30 @@
-// let arr = [10,20,30];
-// arr.map((number,index) => {
-//     console.log(number);
-//     console.log(index);
-      
+// forEach, filter,reducer, map, set
+
+// 1.forEach()
+// const arr = [10,20,30,5,90,87];
+// let sum = 0;
+
+// arr.forEach((number)=>{
+//     sum+= number;
 // })
 
-// let ansArray = arr.map((number) =>{
-//     return number*number;
-// })
+// console.log(sum);
 
-// console.log(ansArray);
+// 2.filter()
+
+// const arr = [10,20,30,5,90,87];
+
+//  const newArr = arr.filter((number)=> number>=25)
+
+//  console.log(newArr);
+
+// 3.map
+
+const arr = [10,20,30,5,90,87];
+
+ const newArr = arr.map((num)=> num*2);
+
+console.log(newArr);
+
+ 
+
