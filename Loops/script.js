@@ -38,3 +38,26 @@
 // while (i <= 5)
 
 
+// for of loop iterating over a loop
+
+// const name = "W3schools";
+// let text = "";
+
+// for(const x of name){
+// text += x  + "<br>";
+// }
+
+// console.log(text);
+
+// iterating over an array
+
+const letters = ["a", "b", "c", "d"];
+
+let text =  "";
+
+for (const x of letters){
+text += x + "<br>";
+}
+
+console.log(text);
+
