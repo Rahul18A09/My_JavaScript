@@ -35,7 +35,7 @@ async function github() {
     }
 
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
 
     const parent = document.getElementById("first");
 
