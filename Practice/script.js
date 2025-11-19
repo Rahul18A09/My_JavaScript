@@ -60,16 +60,19 @@
 
 //2. Error Handling with try-catch
 
-// async function getUsers() {
-//   try {
-//     const res = await fetch("http://wrong-url.com/");
-//     const data = await res.json();
-//     console.log(data);
-//   } catch (err) {
-//     console.log("Something went wrong:", err);
-//   }
-// }
-// getUsers();
+async function getUsers() {
+  try {
+    const res = await fetch("https://fakestoreapi.com/products");
+    const data = await res.json();
+    console.log(data);
+  } catch (err) {
+    console.log("Something went wrong:", err);
+  }finally{
+    console.log("Mai to chalunga hi!");
+    
+  }
+}
+getUsers();
 
 // 3. Real Project Examples
 
@@ -118,18 +121,18 @@
 
 // Example 3: Multiple API calls (Sequential)
 
-async function run() {
+// async function run() {
 
-    const [users,  products] = await Promise.all([
-        fetch("https://fakestoreapi.com/users")
-        .then(res => res.json()),
+//     const [users,  products] = await Promise.all([
+//         fetch("https://fakestoreapi.com/users")
+//         .then(res => res.json()),
 
-        fetch("https://fakestoreapi.com/products")
-        .then(res => res.json())
-    ]);
+//         fetch("https://fakestoreapi.com/products")
+//         .then(res => res.json())
+//     ]);
 
-    console.log(users);
-    console.log(products);
-}
+//     console.log(users);
+//     console.log(products);
+// }
 
-run();
+// run();
