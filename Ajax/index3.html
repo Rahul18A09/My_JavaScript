@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Using JQuey</p>
+    <button id="fetchData">Fetch Data</button>
+    <p id="result"></p>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#fetchData").click(function () {
+                $.ajax({
+                    url: "https://jsonplaceholder.typicode.com/users/1",
+                    method: "GET",
+                    dataType: "json",
+                    success: function (data) {
+                        $('#result').text('Name:' + data.name);
+                    },
+                    error: function (xhr, status, error) {
+                        $("#result").text("Error:" + error);
+                    }
+                });
+            });
+        });
+
+        
+    </script>
+</body>
+
+</html>

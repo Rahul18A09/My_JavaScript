@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Data From fetch API</h1>
+    <div id="data-output"></div>
+
+
+
+
+    <script>
+
+        async function fetchDataAndDisplay() {
+
+            const outputElement = document.getElementById("data-output");
+            try {
+                const res = await fetch('https://catfact.ninja/fact');
+                if (!res.ok) {
+                    throw new Error("HTTP error! status: ${res.status}")
+                }
+                const data = await res.json();
+                const factText = data.fact;
+                const length = data.length
+                console.log(factText);
+                console.log(length);
+
+
+
+                let output = ` <h2>Cat Fact:</h2>
+                               <p>Fact:- ${factText}</p>
+                               <p>length:${length}</p>`;
+
+                outputElement.innerHTML = output;
+
+
+            } catch (error) {
+                console.log("Error:" + error);
+                outputElement.innerHTML = `<h2>Error Fetching Data</h2>
+    <p>Could not load data. Check the console for details.</p>`;
+            }
+
+        }
+
+        fetchDataAndDisplay();
+
+    </script>
+</body>
+
+</html>
