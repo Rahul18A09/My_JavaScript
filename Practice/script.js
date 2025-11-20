@@ -60,19 +60,34 @@
 
 //2. Error Handling with try-catch
 
-async function getUsers() {
+const productcontainer = document.getElementById("products");
+
+async function loadProducts() {
   try {
     const res = await fetch("https://fakestoreapi.com/products");
     const data = await res.json();
     console.log(data);
+
+    let output = "";
+
+    data.forEach((product) => {
+      output += `<div class="product">
+        <img src="${product.image}" alt = "${product.title}">
+        <h2>${product.title.slice(0, 25)}...</h2>
+        <p>Price: ${product.price}</p>
+        <button>Add to Cart</button>
+        </div>`;
+    });
+
+    productcontainer.innerHTML = output;
   } catch (err) {
     console.log("Something went wrong:", err);
-  }finally{
+  } finally {
     console.log("Mai to chalunga hi!");
-    
   }
 }
-getUsers();
+
+loadProducts();
 
 // 3. Real Project Examples
 
