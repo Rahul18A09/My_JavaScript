@@ -11,6 +11,11 @@
     text-align: center;
     background-color: rgb(232, 208, 208);
 }
+.container{
+display: grid;
+grid-template-columns:repeat(1,1fr);
+
+}
 
 h2{
   text-align: center;
@@ -18,7 +23,7 @@ h2{
 }
 
 .product {
-  border: 1px solid #ccc;
+  border: 1px solid black;
   width: 200px;
   padding: 10px;
   margin: 10px;

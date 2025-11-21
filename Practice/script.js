@@ -72,7 +72,7 @@ async function loadProducts() {
 
     data.forEach((product) => {
       output += `<div class="product">
-        <img src="${product.image}" alt = "${product.title}">
+        <img src="${product.image}">
         <h2>${product.title.slice(0, 25)}...</h2>
         <p>Price: ${product.price}</p>
         <button>Add to Cart</button>
