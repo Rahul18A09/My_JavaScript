@@ -72,9 +72,13 @@
 // (4) Extracting & Editing
 
 // let arr  = [10,20,30,40,50];
-
 // arr.slice(1,4);
 // console.log(arr.slice(1,4));
+
+
+// let str = "Rahulbharada";
+// str.slice(1,4);
+// console.log(str.slice(1,4));
 
 // arr.splice(2,1,"A")
 // arr.splice(3, 1, "R");
@@ -100,12 +104,11 @@
 
 // fruits.forEach((fruit, index) => {
 //     console.log(index + "=>" + fruit);
-
-// })
+// });
 
 // Map()
 
-// let numbers = [1, 2, 3, 4];
+// let numbers = [1, 2, 3, 4, 5];
 
 // let squares = numbers.map(num => num * num);
 
@@ -113,7 +116,7 @@
 
 // forEach()
 
-// let arr = [10,20,30,40,50];
+// let arr = [10,20,30,40,50,60];
 // let sum = 0;
 
 // arr.forEach((number) =>{
@@ -125,13 +128,13 @@
 
 // let numbers = [1, 2, 3, 4, 5, 6];
 
-// let evens = numbers.filter(num => num>3);
+// let num1 = numbers.filter(num => num>3);
 
-// console.log(evens);
+// console.log(num1);
 
 // reduce()
 
-// let numbers = [1, 2, 3, 4, 5];
+// let numbers = [1, 2, 3, 4, 5,6];
 
 // let sum = numbers.reduce((accumulator , currentValue) => accumulator + currentValue, 0);
 
@@ -165,7 +168,7 @@
 
 // some()
 
-// let numbers = [1, 3, 5, 7, 10];
+// let numbers = [1, 3, 5, 7, 8];
 
 // let haseven = numbers.some(num => num % 2 === 0);
 
@@ -208,12 +211,12 @@
 // const numbers = [4,9,16,25,29];
 // let first = numbers.find(myfunction);
 
-// function myfunction(value, index, array) {
+// function myfunction(value){
 //     return value > 18;
 // }
 // console.log(first);
 
 // const temp = [27,28,30,40,42,35,30];
 
-// let high = temp.findLast(x => x > 40);
+// let high = temp.findLast(x => x > 30);
 // console.log(high);
