@@ -1,13 +1,19 @@
 //(1) Access & Modify
-// let fruits = ["Banana", "Apple", "Graps"];
+// let fruits = ["Banana", "Apple", "Graps", "papaya"];
 // console.log(fruits.length);
 
-// let num = [10, 20, 30];
-// console.log(num[0]);
-// console.log(num[num.length-1]);
+// let num1 = [10, 20, 30];
+//     num2 = [40, 50, 60];
 
-// num[2] = 25; //modify
-// num[3] = 40; //add at last
+// console.log(...num1,...num2);
+// console.log(num2[1]);
+// num.push(40,50);
+// console.log(num1,num2);
+
+// console.log(num1[num1.length-1]);
+
+// num1[2] = 25; //modify
+// num2[3] = 40; //add at last
 // console.log(num);
 
 // (2) Adding & Removing

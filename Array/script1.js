@@ -26,13 +26,13 @@
 
 // console.log(newArr);
 
-const products = [
-  // Electronics
-  { id: 1, name: "Laptop", category: "Electronics", price: 1200, inStock: true },
-  { id: 2, name: "Headphones", category: "Electronics", price: 200, inStock: true },
-  { id: 3, name: "Smartphone", category: "Electronics", price: 800, inStock: false },
-  { id: 4, name: "Monitor", category: "Electronics", price: 300, inStock: true },
-  { id: 5, name: "Keyboard", category: "Electronics", price: 75, inStock: true },]
+// const products = [
+//   // Electronics
+//   { id: 1, name: "Laptop", category: "Electronics", price: 1200, inStock: true },
+//   { id: 2, name: "Headphones", category: "Electronics", price: 200, inStock: true },
+//   { id: 3, name: "Smartphone", category: "Electronics", price: 800, inStock: false },
+//   { id: 4, name: "Monitor", category: "Electronics", price: 300, inStock: true },
+//   { id: 5, name: "Keyboard", category: "Electronics", price: 75, inStock: true },]
 
  
 // howto use filter
@@ -65,7 +65,7 @@ const products = [
 // },0)
 // console.log(sum);
 
-const values = [75,50,90,80,65,95];
-const max  = values.reduce((acc ,val)=>Math.max(acc, val));
-console.log(max);
+// const values = [75,50,90,80,65,95];
+// const max  = values.reduce((acc ,val)=>Math.max(acc, val));
+// console.log(max);
 
