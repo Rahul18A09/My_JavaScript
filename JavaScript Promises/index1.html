@@ -10,28 +10,129 @@
 <body>
     <h1>Promises practice</h1>
 
-
     <script>
-        const mySimplePromise = new Promise((resolve, reject) => {
-            setTimeout(() => {
-                const operationSuccessful = true;
+        // const mySimplePromise = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //         const operationSuccessful = true;
 
-                if (operationSuccessful) {
-                    resolve("Data successfully fetched!");
-                } else {
-                    reject("Error:, Could not fetch data");
-                }
-            }, 2000);
-        });
+        //         if (operationSuccessful) {
+        //             resolve("Data successfully fetched!");
+        //         } else {
+        //             reject("Error:, Could not fetch data");
+        //         }
+        //     }, 2000);
+        // });
 
-        mySimplePromise.then((reslut) => {
-            console.log("success Handler: ", reslut);
-        }).catch((error) => {
-            console.log("Error Handler:", error);
+        // mySimplePromise.then((reslut) => {
+        //     console.log("success Handler: ", reslut);
+        // }).catch((error) => {
+        //     console.log("Error Handler:", error);
 
-        });
+        // });
 
-        console.log("Program flow continues immediately...");
+        // console.log("Program flow continues immediately...");
+
+
+        // Asynchronous
+        // console.log("Task-1");
+
+        // setTimeout(()=>{
+        //     console.log("Task-2 (after 3 seconds)");
+        // },3000);
+
+        // console.log("Task-3");
+
+
+        //Example-1:  Basic Callback
+        // function greet(name, Callback) {
+        //     console.log("Hello " + name);
+        //     Callback();
+        // }
+
+        // function sayBye() {
+        //     console.log("Goodbye!");
+
+        // }
+
+        // greet("Rahul", sayBye);
+
+        // Example - 2:  Callback after timeout
+
+        // function showMessage(Callback){
+        //     setTimeout(() =>{
+        //         console.log("Data Loaded");
+        //         Callback();
+        //     },2000);
+        // }
+
+        // showMessage(() =>{
+        //     console.log("Callback Executed after data loaded!");
+
+        // });
+
+
+
+        // Promise
+
+        // Example - 1
+        // let myPromise = new Promise((resolve, reject) => {
+        //     let success = true;
+
+        //     if (success) {
+        //         resolve("Promise Fullfiled!");
+        //     } else {
+        //         reject("Promise Rejected!");
+        //     }
+        // });
+
+        // myPromise
+        //     .then((message) => {
+        //         console.log(message);
+
+        //     }).catch((error) => {
+        //         console.log(error);
+        //     });
+
+        // Example - 2
+        // let record = () => {
+        //     return new Promise((res, rej) => {
+        //         setTimeout(() => {
+        //             res({ id: 1, name: "Rahul" })
+        //         }, 2000);
+        //     });
+        // }
+
+        // record().then(data => console.log(data))
+        //     .catch((error) => {
+        //         console.log(error);
+
+        //     });
+
+        // Example -3 Modern Example
+
+        // fetch("https://dummyjson.com/products")
+        //     .then(response => response.json())
+        //     .then(data => console.log(data))
+        //     .catch(error => console.log(error));
+
+        // Async-await
+
+        const fetchData = async () => {
+            try{
+                const res = await fetch("https://dummyjson.com/products/1");
+                const data = await res.json();
+                console.log(data);  
+            }
+            catch(error){
+                console.log("Error:", error);
+                
+            }
+        };
+
+        fetchData();
+
+
+
     </script>
 </body>
 
