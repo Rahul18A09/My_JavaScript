@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+
+<body>
+    <h1>Promises practice</h1>
+
+
+    <script>
+        const mySimplePromise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const operationSuccessful = true;
+
+                if (operationSuccessful) {
+                    resolve("Data successfully fetched!");
+                } else {
+                    reject("Error:, Could not fetch data");
+                }
+            }, 2000);
+        });
+
+        mySimplePromise.then((reslut) => {
+            console.log("success Handler: ", reslut);
+        }).catch((error) => {
+            console.log("Error Handler:", error);
+
+        });
+
+        console.log("Program flow continues immediately...");
+    </script>
+</body>
+
+</html>
