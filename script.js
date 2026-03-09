@@ -180,20 +180,67 @@
 
 
 // Object Destructuring
+// const user = {
+//   name: "Rahul",
+//   age: 22,
+//   city: "Ahmedabad",
+//   greet: function(){
+// console.log("Hello" + " " + this.name);
+
+//   }
+// };
+
+// user.greet();
+
+
+// let key = "name";
+// console.log(user[key]);
+
+
+// const obj = {
+//     "first name": "Rahul"
+// };
+
+// console.log(obj["first name"]);
+
+
+
+
+// const {name, age, city} = user;
+// console.log(name);
+// console.log(age);
+// console.log(city):
+// const {name: username} = user;
+// console.log(username);
+
+
+// loop through Object
+
 const user = {
   name: "Rahul",
   age: 22,
   city: "Ahmedabad"
 };
 
-// const {name, age, city} = user;
-// console.log(name);
-// console.log(age);
-// console.log(city):
 
-const {name: username} = user;
-console.log(username);
+// using(for...in)
+// for (let key in user){
+//     console.log(key,  user[key]);
+    
+// }
 
 
+// using(Object.keys())
+// Object.keys(user).forEach(key => {
+//     console.log(key, user[key]);
+    
+// })
+
+
+// using(Object.entries())
+Object.entries(user).forEach(([key, value]) => {
+    console.log(key , value);
+    
+});
 
 
