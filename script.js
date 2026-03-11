@@ -216,11 +216,11 @@
 
 // loop through Object
 
-const user = {
-  name: "Rahul",
-  age: 22,
-  city: "Ahmedabad"
-};
+// const user = {
+//   name: "Rahul",
+//   age: 22,
+//   city: "Ahmedabad"
+// };
 
 
 // using(for...in)
@@ -237,10 +237,22 @@ const user = {
 // })
 
 
+
 // using(Object.entries())
-Object.entries(user).forEach(([key, value]) => {
-    console.log(key , value);
+// Object.entries(user).forEach(([key, value]) => {
+//     console.log(key , value);
     
-});
+// });
+
+
+// DOM = Document Object Model
+
+document.getElementById("title").innerText = "Hello JavaScript";
+
+let element = document.getElementById("heading");
+element.innerText = "Hello World";
+console.log(element);
+
+
 
 
