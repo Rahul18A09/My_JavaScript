@@ -248,6 +248,7 @@
 // DOM = Document Object Model
 
 document.getElementById("title").innerText = "Hello JavaScript";
+document.querySelector(".text").style.color = "Blue";
 
 let element = document.getElementById("heading");
 element.innerText = "Hello World";
