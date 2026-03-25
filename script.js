@@ -10,6 +10,12 @@
     
 // }
 
+const greet = function() {
+  console.log("Hello Rahul");
+};
+
+greet();
+
 // function sayBye() {
 //     console.log("Bye");
     
