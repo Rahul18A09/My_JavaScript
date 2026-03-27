@@ -210,11 +210,11 @@
 
 // ✅ How to get keys?
 
-const user = {
-    name: "rahul",
-    age:25,
-    city: "Delhi"
-}
+// const user = {
+//     name: "rahul",
+//     age:25,
+//     city: "Delhi"
+// }
 
 // Object.keys(user).forEach(key => {
 //     console.log(key);  
@@ -233,7 +233,68 @@ const user = {
 
 // ✅ How to get entries?
 
-console.log(Object.entries(user));
+// console.log(Object.entries(user));
+
+
+// Template Literals (` `)
+// used for string interpolation
+
+// const name  = "Rahul";
+
+// console.log("Hello" + name);
+// console.log(`Hello ${name}`);
+
+   
+// Spread Operator (...)
+
+// const user = {
+//   name: "Rahul"
+// };
+
+// const copy = { ...user };
+
+// console.log(copy);
+// console.log(user.name);
+// console.log({...user});
+
+// const obj1 = {
+//     name: "rahul",
+//     age: 25
+// }
+
+// const obj2 = {
+//     name1: "Asha",
+//     age1: 23
+// }
+
+// const mrgobj = {...obj1,...obj2};
+// console.log(mrgobj);
+
+
+// Rest Operator (...)
+
+// Collect multiple values into one variable.
+
+// const sum  = (...numbers) => {
+//     return numbers.reduce((total, sum) => total + sum)
+// }
+
+// console.log(sum(1,2,3,4));
+
+// const numbers = [1,2,3,4,5];
+
+// const [second, ...rest] = numbers;
+
+// console.log(second);
+// console.log(rest);
+// console.log(numbers);
+
+
+
+
+
+
+
 
 
 
