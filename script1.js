@@ -279,11 +279,13 @@
 //     return numbers.reduce((total, sum) => total + sum)
 // }
 
+
 // console.log(sum(1,2,3,4));
 
 // const numbers = [1,2,3,4,5];
 
 // const [second, ...rest] = numbers;
+
 
 // console.log(second);
 // console.log(rest);
