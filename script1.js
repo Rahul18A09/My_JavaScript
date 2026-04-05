@@ -402,13 +402,35 @@
 
 // Callback hell
 
-getData(function(){
-    getMoreData(function(){
-        getEvenMoreData(function(){
-            console.log('Done'); 
-        });
-    });
-});
+// getData(function(){
+//     getMoreData(function(){
+//         getEvenMoreData(function(){
+//             console.log('Done'); 
+//         });
+//     });
+// });
+
+
+// const user = {
+//     name: 'rahul',
+//     greet(){
+//         console.log(this.name);
+        
+//     }
+// };
+
+// user.greet();
+
+
+const user = {
+    name: 'rahul',
+    greet: () => {
+        console.log(this.name);
+        
+    }
+};
+
+user.greet();
 
 
 
