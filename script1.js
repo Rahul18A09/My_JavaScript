@@ -370,10 +370,48 @@
 // console.log(result);
 
 // reduce()
-let nums = [1,2,3,4];
+// let nums = [1,2,3,4];
 
-let ans = nums.reduce((acc, curr) => acc + curr, 0);
-console.log(ans);
+// let ans = nums.reduce((acc, curr) => acc + curr, 0);
+// console.log(ans);
+
+
+// Destructiring
+
+// let user = {name: "rahul", age: 25};
+
+// let {name, age} = user;
+
+// console.log({name, age});
+
+
+//  Spread Operator (...)
+
+// let arr1 = [1,2,3];
+
+// let arr2 = [...arr1, 3 ,4];
+
+// console.log(arr2);
+
+// let obj = {name: 'rahul'};
+
+// let newobj = {...obj, age:22};
+
+// console.log(newobj);
+
+
+// Callback hell
+
+getData(function(){
+    getMoreData(function(){
+        getEvenMoreData(function(){
+            console.log('Done'); 
+        });
+    });
+});
+
+
+
 
 
 
