@@ -244,6 +244,8 @@
 // console.log("Hello" + name);
 // console.log(`Hello ${name}`);
 
+
+
    
 // Spread Operator (...)
 
@@ -284,12 +286,94 @@
 
 // const numbers = [1,2,3,4,5];
 
-// const [second, ...rest] = numbers;
+// const [first, ...rest] = numbers;
 
 
-// console.log(second);
+// console.log(first);
 // console.log(rest);
 // console.log(numbers);
+
+
+// Example of Closure
+
+// function outer() {
+//     let count = 0;
+
+//    return function inner(){
+//         count++;
+//         console.log(count);
+//     };
+
+// }
+
+// const fn = outer();
+// fn();
+// fn();
+
+
+// Hoisting
+
+// console.log(a);
+// var a = 10;
+
+// function app () {
+//     console.log(a);  
+//     var a = 15
+// }
+
+// app();
+
+
+// Promise
+
+// const promise = new Promise((resolve, reject) => {
+//     let success  = true;
+
+//     if(success){
+//         resolve('Task completed');
+//     }else {
+//         reject('Task failed');
+//     }
+// });
+
+// promise.then((result) => {
+//     console.log(result);   
+// }).catch((error) => {
+//     console.log(error);
+    
+// });
+
+// Event loop
+
+// console.log('start');
+
+// setTimeout(() => {
+//     console.log("Hello");
+    
+// }, 2000);
+
+// console.log('End');
+
+
+
+// map()  //transform an array in to new array
+
+// let nums = [1,2,3,4];
+// let  newnums = nums.map(n => n *2)
+// console.log(newnums);
+
+// filter()   //filters an array
+
+// let num = [10, 20, 30, 35, 40,45];
+
+// let result = num.filter(n => n > 20);
+// console.log(result);
+
+// reduce()
+let nums = [1,2,3,4];
+
+let ans = nums.reduce((acc, curr) => acc + curr, 0);
+console.log(ans);
 
 
 

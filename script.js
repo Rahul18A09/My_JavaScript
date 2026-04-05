@@ -10,11 +10,11 @@
     
 // }
 
-const greet = function() {
-  console.log("Hello Rahul");
-};
+// const greet = function() {
+//   console.log("Hello Rahul");
+// };
 
-greet();
+// greet();
 
 // function sayBye() {
 //     console.log("Bye");
