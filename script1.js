@@ -422,15 +422,30 @@
 // user.greet();
 
 
-const user = {
-    name: 'rahul',
-    greet: () => {
-        console.log(this.name);
+// const user = {
+//     name: 'rahul',
+//     greet: () => {
+//         console.log(this.name);
         
-    }
-};
+//     }
+// };
 
-user.greet();
+// user.greet();
+
+
+
+// Event loop
+
+console.log('A');
+
+setTimeout(() => {
+    console.log('B');
+    
+}, 2000);
+
+console.log('C');
+
+
 
 
 
