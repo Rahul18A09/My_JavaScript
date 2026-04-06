@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -27,6 +28,8 @@ function App() {
       <div className="btn">
         <button onClick={getUsers}>Click</button>
       </div>
+
+    
     </>
     // Inline Eventhandler
   );

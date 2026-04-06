@@ -436,14 +436,59 @@
 
 // Event loop
 
-console.log('A');
+// console.log('A');
 
-setTimeout(() => {
-    console.log('B');
+// setTimeout(() => {
+//     console.log('B');
     
-}, 2000);
+// }, 2000);
 
-console.log('C');
+// console.log('C');
+
+
+
+// fetch API
+
+// fetch("https://jsonplaceholder.typicode.com/users")
+//   .then(response => response.json())
+//   .then(data => console.log(data))
+//   .catch(error => console.log(error));
+
+
+// async function getUsers() {
+//     try {
+//         const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//         const data = await response.json();
+//         console.log(data);
+        
+//     } catch(error) {
+//         console.log(error);
+        
+//     }
+// }
+
+// getUsers();
+
+
+// let nums = [1,2,3,4];
+
+// // nums.push(5);
+// nums.pop();
+
+// console.log(nums);
+
+// let name = 'rahul';
+
+let msg = `
+Hello 
+Rahul
+from Navsari
+`;
+
+
+console.log(`Hello ${msg}`);
+
+
 
 
 
