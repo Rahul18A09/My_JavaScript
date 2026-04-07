@@ -477,16 +477,50 @@
 
 // console.log(nums);
 
+
+// Template literals
+// used for string interpolation
+
+
 // let name = 'rahul';
 
-let msg = `
-Hello 
-Rahul
-from Navsari
-`;
+// let msg = `
+// Hello 
+// Rahul
+// from Navsari
+// `;
+
+// // console.log("Hello" + " " + name);
+// console.log(`Hello ${name}`);
+// console.log(`${msg}`);
 
 
-console.log(`Hello ${msg}`);
+// swap variable without using third variable
+
+// method 1
+// let a = 10;
+// let b = 15;
+
+// a = a + b;  //25
+// b = a - b;  //10
+// a = a - b;  //15
+
+// console.log(a);
+// console.log(b);
+// console.log(a , b);
+
+// method2
+// let a = 5;
+// let b = 10;
+
+// [a,b] = [b,a];
+
+// console.log(a,b);
+
+
+
+
+
 
 
 
