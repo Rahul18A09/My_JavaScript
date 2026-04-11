@@ -519,10 +519,27 @@
 
 
 
+// Palindrome Example in JavaScript
+
+// Using reverse()
+
+// function isPalindrome(str){
+//   let reversed = str.split('').reverse().join('');
+//   return str === reversed;
+// }
+
+// console.log(isPalindrome("madam"));
+// console.log(isPalindrome("hello"));
 
 
+function isPalindrome(str) {
+    str = str.toString(); // convert number to string
+    let reversed = str.split().reverse().join();
+    return str === reversed;
+}
 
-
+console.log(isPalindrome("racecar"));
+console.log(isPalindrome(1221));
 
 
 
