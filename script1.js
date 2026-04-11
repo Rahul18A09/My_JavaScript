@@ -554,13 +554,24 @@
 
 // Find Largest Number in Array
 
-let arr = [10, 5, 20, 8];
+// let arr = [10, 5, 20, 8];
 
-function largest(arr){
-    return Math.max(...arr);
+// function largest(arr){
+//     return Math.max(...arr);
+// }
+
+// console.log(largest(arr));
+
+
+// Remove Duplicate Values from Array
+
+let arr = [1,2,2,3,4,4,5,6];
+
+function removeDuplicates(arr){
+    return [...new Set(arr)];
 }
 
-console.log(largest(arr));
+console.log(removeDuplicates(arr));
 
 
 
