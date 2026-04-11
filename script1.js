@@ -532,19 +532,35 @@
 // console.log(isPalindrome("hello"));
 
 
-function isPalindrome(str) {
-    str = str.toString(); // convert number to string
-    let reversed = str.split().reverse().join();
-    return str === reversed;
+// function isPalindrome(str) {
+//     str = str.toString(); // convert number to string
+//     let reversed = str.split().reverse().join();
+//     return str === reversed;
+// }
+
+// console.log(isPalindrome("racecar"));
+// console.log(isPalindrome(1221));
+
+
+// Reverse a String
+
+// function reverseString(str){
+//     return str.split('').reverse().join('');
+// }
+
+
+// console.log(reverseString("hello"));
+
+
+// Find Largest Number in Array
+
+let arr = [10, 5, 20, 8];
+
+function largest(arr){
+    return Math.max(...arr);
 }
 
-console.log(isPalindrome("racecar"));
-console.log(isPalindrome(1221));
-
-
-
-
-
+console.log(largest(arr));
 
 
 
