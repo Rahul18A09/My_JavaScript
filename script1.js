@@ -544,13 +544,11 @@
 
 // Reverse a String
 
-// function reverseString(str){
-//     return str.split('').reverse().join('');
+// function reverseString(str) {
+//     return str.split("").reverse().join("");
 // }
 
-
 // console.log(reverseString("hello"));
-
 
 // Find Largest Number in Array
 
@@ -565,14 +563,29 @@
 
 // Remove Duplicate Values from Array
 
-let arr = [1,2,2,3,4,4,5,6];
+// let arr = [1,2,2,3,4,4,5,6];
 
-function removeDuplicates(arr){
-    return [...new Set(arr)];
+// function removeDuplicates(arr){
+//     return [...new Set(arr)];
+// }
+
+// console.log(removeDuplicates(arr));
+
+
+// Find Duplicate Elements in Array
+
+function findDuplicates(arr){
+    let duplicates = [];
+
+    for(let i = 0; i < arr.length; i++){
+       if(arr.indexOf(arr[i]) !==i) {
+        duplicates.push(arr[i]);
+       }
+    }
+return [...new Set(duplicates)];
 }
 
-console.log(removeDuplicates(arr));
-
+console.log(findDuplicates([1,2,2,3,4,4,5,5,6,7,7]));
 
 
 
