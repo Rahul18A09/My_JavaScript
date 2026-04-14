@@ -25,7 +25,7 @@
 
 // 3️⃣ Comparison Operators
 
-// == 
+// ==
 // ===
 // !=
 // !==
@@ -78,18 +78,15 @@
 // let y = Number(x);
 // console.log(y);
 
-
-
 // function in javaScript
 
 // Normal Function
 // function greet() {
 //     console.log("Hello Rahul");
-    
+
 // }
 
 // greet();
-
 
 // function Expression()
 // const greet = function() {
@@ -98,13 +95,12 @@
 
 // greet();
 
-
 //  Arrow Function
 // short syntax version of function expression
 
 // const greet = () => {
 //     console.log("Hello Rahul");
-    
+
 // }
 
 // greet();
@@ -114,18 +110,17 @@
 //     age: 25,
 //     normalfun: function(){
 //         console.log(this.name);
-        
+
 //     },
 
 //     arrowfun: () => {
 //         console.log(this.name);
-        
+
 //     }
 // };
 
 // obj.normalfun();
 // obj.arrowfun();
-
 
 // Callback function
 // function greet(name, callback) {
@@ -135,13 +130,10 @@
 
 // function sayGoodbye(){
 //     console.log("Bye");
-    
+
 // }
 
 // greet("Rahul", sayGoodbye);
-
-
-
 
 // Object Creation
 
@@ -183,19 +175,16 @@
 //     age:25,
 //     greet: function(){
 //         console.log("Hello" + " " + this.name);
-        
+
 //     }
 // }
 
 // user.greet();
 
-
-
-
 // ✅ How to clone an object?
 // const user = {
 //     name: "Rahul",
-//     age: 25, 
+//     age: 25,
 
 // const copy = {...user};
 // console.log(copy);
@@ -217,8 +206,8 @@
 // }
 
 // Object.keys(user).forEach(key => {
-//     console.log(key);  
-// });       
+//     console.log(key);
+// });
 
 // console.log(Object.keys(user));
 
@@ -228,13 +217,12 @@
 
 // Object.values(user).forEach(value => {
 //     console.log(value);
-    
+
 // });
 
 // ✅ How to get entries?
 
 // console.log(Object.entries(user));
-
 
 // Template Literals (` `)
 // used for string interpolation
@@ -244,9 +232,6 @@
 // console.log("Hello" + name);
 // console.log(`Hello ${name}`);
 
-
-
-   
 // Spread Operator (...)
 
 // const user = {
@@ -272,7 +257,6 @@
 // const mrgobj = {...obj1,...obj2};
 // console.log(mrgobj);
 
-
 // Rest Operator (...)
 
 // Collect multiple values into one variable.
@@ -281,18 +265,15 @@
 //     return numbers.reduce((total, sum) => total + sum)
 // }
 
-
 // console.log(sum(1,2,3,4));
 
 // const numbers = [1,2,3,4,5];
 
 // const [first, ...rest] = numbers;
 
-
 // console.log(first);
 // console.log(rest);
 // console.log(numbers);
-
 
 // Example of Closure
 
@@ -310,19 +291,17 @@
 // fn();
 // fn();
 
-
 // Hoisting
 
 // console.log(a);
 // var a = 10;
 
 // function app () {
-//     console.log(a);  
+//     console.log(a);
 //     var a = 15
 // }
 
 // app();
-
 
 // Promise
 
@@ -337,10 +316,10 @@
 // });
 
 // promise.then((result) => {
-//     console.log(result);   
+//     console.log(result);
 // }).catch((error) => {
 //     console.log(error);
-    
+
 // });
 
 // Event loop
@@ -349,12 +328,10 @@
 
 // setTimeout(() => {
 //     console.log("Hello");
-    
+
 // }, 2000);
 
 // console.log('End');
-
-
 
 // map()  //transform an array in to new array
 
@@ -375,7 +352,6 @@
 // let ans = nums.reduce((acc, curr) => acc + curr, 0);
 // console.log(ans);
 
-
 // Destructiring
 
 // let user = {name: "rahul", age: 25};
@@ -383,7 +359,6 @@
 // let {name, age} = user;
 
 // console.log({name, age});
-
 
 //  Spread Operator (...)
 
@@ -399,40 +374,35 @@
 
 // console.log(newobj);
 
-
 // Callback hell
 
 // getData(function(){
 //     getMoreData(function(){
 //         getEvenMoreData(function(){
-//             console.log('Done'); 
+//             console.log('Done');
 //         });
 //     });
 // });
-
 
 // const user = {
 //     name: 'rahul',
 //     greet(){
 //         console.log(this.name);
-        
+
 //     }
 // };
 
 // user.greet();
-
 
 // const user = {
 //     name: 'rahul',
 //     greet: () => {
 //         console.log(this.name);
-        
+
 //     }
 // };
 
 // user.greet();
-
-
 
 // Event loop
 
@@ -440,12 +410,10 @@
 
 // setTimeout(() => {
 //     console.log('B');
-    
+
 // }, 2000);
 
 // console.log('C');
-
-
 
 // fetch API
 
@@ -454,21 +422,19 @@
 //   .then(data => console.log(data))
 //   .catch(error => console.log(error));
 
-
 // async function getUsers() {
 //     try {
 //         const response = await fetch("https://jsonplaceholder.typicode.com/users");
 //         const data = await response.json();
 //         console.log(data);
-        
+
 //     } catch(error) {
 //         console.log(error);
-        
+
 //     }
 // }
 
 // getUsers();
-
 
 // let nums = [1,2,3,4];
 
@@ -477,15 +443,13 @@
 
 // console.log(nums);
 
-
 // Template literals
 // used for string interpolation
-
 
 // let name = 'rahul';
 
 // let msg = `
-// Hello 
+// Hello
 // Rahul
 // from Navsari
 // `;
@@ -493,7 +457,6 @@
 // // console.log("Hello" + " " + name);
 // console.log(`Hello ${name}`);
 // console.log(`${msg}`);
-
 
 // swap variable without using third variable
 
@@ -517,8 +480,6 @@
 
 // console.log(a,b);
 
-
-
 // Palindrome Example in JavaScript
 
 // Using reverse()
@@ -531,7 +492,6 @@
 // console.log(isPalindrome("madam"));
 // console.log(isPalindrome("hello"));
 
-
 // function isPalindrome(str) {
 //     str = str.toString(); // convert number to string
 //     let reversed = str.split().reverse().join();
@@ -540,7 +500,6 @@
 
 // console.log(isPalindrome("racecar"));
 // console.log(isPalindrome(1221));
-
 
 // Reverse a String
 
@@ -560,14 +519,13 @@
 
 // console.log(largest(arr));
 
-let arr=[10,15,20,30,45];
+// let arr=[10,15,20,30,45];
 
-function largest(arr) {
-    return Math.max(...arr);
-}
+// function largest(arr) {
+//     return Math.max(...arr);
+// }
 
-console.log(largest(arr));
-
+// console.log(largest(arr));
 
 // Remove Duplicate Values from Array
 
@@ -578,7 +536,6 @@ console.log(largest(arr));
 // }
 
 // console.log(removeDuplicates(arr));
-
 
 // Find Duplicate Elements in Array
 
@@ -601,26 +558,78 @@ console.log(largest(arr));
 
 // console.log(reverseString("Rahul"));
 
+// Frequency Counter (Character Count)
+
+// function frequnecyCounter(str) {
+//     let count = {};
+
+//     for(let char of str){
+//         count[char]= (count[char] || 0) + 1;
+//     }
+//     return count;
+// }
+
+// console.log(frequnecyCounter("Ulloo"));
+
+// map example
+
+// const number = [2,3,4,5,6];
+
+// const doubled = number.map(num => num*2);
+
+// console.log(doubled);
+
+// const users = [
+//   { name: "Rahul" },
+//   { name: "Amit" },
+//   { name: "Neha" }
+// ];
+
+// const  names = users.map(user => user.name);
+
+// console.log(names);
+
+// filter() example
+
+// find odd numbers
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+
+// const odd = numbers.filter(num => num % 2 !== 0);
+
+// console.log(odd);
+
+// Filter users age > 18
+
+// const users = [
+//   { name: "Rahul", age: 22 },
+//   { name: "Amit", age: 16 },
+//   { name: "Neha", age: 25 }
+// ];
+
+// const adults = users.filter(user => user.age > 18);
+
+// console.log(adults);
+
+// reduce example
+
+// const numbers = [2,4,6,8,10];
+
+// const sum  = numbers.reduce((total, sum)=> total + sum, 0);
+
+// console.log(sum);
+
+const users = [
+  { id: 1, name: "Rahul" },
+  { id: 2, name: "Amit" },
+  { id: 3, name: "Neha" },
+];
+
+const result = users.reduce((obj, user) => {
+  obj[user.id] = user.name;
+  return obj;
+}, {});
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
+console.log(result);
 
