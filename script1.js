@@ -560,6 +560,14 @@
 
 // console.log(largest(arr));
 
+let arr=[10,15,20,30,45];
+
+function largest(arr) {
+    return Math.max(...arr);
+}
+
+console.log(largest(arr));
+
 
 // Remove Duplicate Values from Array
 
@@ -574,18 +582,24 @@
 
 // Find Duplicate Elements in Array
 
-function findDuplicates(arr){
-    let duplicates = [];
+// function findDuplicates(arr){
+//     let duplicates = [];
 
-    for(let i = 0; i < arr.length; i++){
-       if(arr.indexOf(arr[i]) !==i) {
-        duplicates.push(arr[i]);
-       }
-    }
-return [...new Set(duplicates)];
-}
+//     for(let i = 0; i < arr.length; i++){
+//        if(arr.indexOf(arr[i]) !==i) {
+//         duplicates.push(arr[i]);
+//        }
+//     }
+// return [...new Set(duplicates)];
+// }
 
-console.log(findDuplicates([1,2,2,3,4,4,5,5,6,7,7]));
+// console.log(findDuplicates([1,2,2,3,4,4,5,5,6,7,7]));
+
+// function reverseString(str){
+//     return str.split('').reverse().join('');
+// }
+
+// console.log(reverseString("Rahul"));
 
 
 
