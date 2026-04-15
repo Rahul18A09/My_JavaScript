@@ -619,17 +619,17 @@
 
 // console.log(sum);
 
-const users = [
-  { id: 1, name: "Rahul" },
-  { id: 2, name: "Amit" },
-  { id: 3, name: "Neha" },
-];
+// const users = [
+//   { id: 1, name: "Rahul" },
+//   { id: 2, name: "Amit" },
+//   { id: 3, name: "Neha" },
+// ];
 
-const result = users.reduce((obj, user) => {
-  obj[user.id] = user.name;
-  return obj;
-}, {});
+// const result = users.reduce((obj, user) => {
+//   obj[user.id] = user.name;
+//   return obj;
+// }, {});
 
 
-console.log(result);
+// console.log(result);
 

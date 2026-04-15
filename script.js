@@ -253,13 +253,28 @@
 
 // DOM = Document Object Model
 
-document.getElementById("title").innerText = "Hello JavaScript";
-document.querySelector(".text").style.color = "Blue";
+// document.getElementById("title").innerText = "Hello JavaScript";
+// document.querySelector(".text").style.color = "Blue";
 
-let element = document.getElementById("heading");
-element.innerText = "Hello World";
-console.log(element);
-
-
+// let element = document.getElementById("heading");
+// element.innerText = "Hello World";
+// console.log(element);
 
 
+// var, let , const
+
+// Block scope
+
+// {
+// let x = 10;
+
+// }
+
+// console.log(x);
+
+{
+    var a = 10;
+    console.log(a);
+    
+}
+console.log(a);
