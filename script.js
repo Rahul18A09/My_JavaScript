@@ -294,7 +294,21 @@
 // var a = 15;
 
 
-console.log(x);
-let x = 15;
+// console.log(x);
+// let x = 15;
 
 
+syaHello();  // function declaration is fully hoisted
+
+function syaHello(){
+    console.log("Hello rahul");
+    
+}
+
+
+sayHi(); // it is not a function
+
+const sayHi = function (){
+    console.log("Hello");
+    
+}
