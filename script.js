@@ -272,9 +272,29 @@
 
 // console.log(x);
 
-{
-    var a = 10;
-    console.log(a);
+// {
+//     var a = 10;
+//     console.log(a);
     
-}
-console.log(a);
+// }
+// console.log(a);
+
+// let a = 10;
+
+// let b = "10";
+
+// console.log(a == b);
+// console.log(a === b);
+
+
+// Hoisting
+
+// console.log(a);
+
+// var a = 15;
+
+
+console.log(x);
+let x = 15;
+
+
