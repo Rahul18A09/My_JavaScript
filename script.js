@@ -298,17 +298,32 @@
 // let x = 15;
 
 
-syaHello();  // function declaration is fully hoisted
+// syaHello();  // function declaration is fully hoisted
 
-function syaHello(){
-    console.log("Hello rahul");
+// function syaHello(){
+//     console.log("Hello rahul");
     
-}
+// }
 
+// sayHi(); // it is not a function
 
-sayHi(); // it is not a function
-
-const sayHi = function (){
-    console.log("Hello");
+// const sayHi = function (){
+//     console.log("Hello");
     
-}
+// }
+
+
+console.log('start');
+
+setTimeout(() => {
+    console.log('Timeout');
+    
+}, 0);
+
+Promise.resolve().then(()=> {
+    console.log('Promise');
+    
+});
+
+console.log('End');
+
