@@ -354,20 +354,72 @@
 
 // API-style example
 
-async function getUsers() {
-    try{
-        let response = await fetch("https://jsonplaceholder.typicode.com/users");
-        let data = await response.json();
+// async function getUsers() {
+//     try{
+//         let response = await fetch("https://jsonplaceholder.typicode.com/users");
+//         let data = await response.json();
 
-        console.log(data);
+//         console.log(data);
         
-    }catch (error) {
-        console.log("Error:" , error);
+//     }catch (error) {
+//         console.log("Error:" , error);
         
-    }
-}
+//     }
+// }
 
-getUsers();
+// getUsers();
 
+
+// const fs = require("fs");
+
+// fs.writeFile("demo.txt", "Hello Rahul", (err) => {
+//     if (err) throw err;
+//     console.log("File Created successfully");
+    
+// });
+
+//  const data = fs.readFile("demo.txt", "utf8", (err, data) => {
+//     if (err) throw err;
+//     console.log(data);
+    
+// });
+
+// fs.appendFile("demo.txt", "\nWelcome to Node.js", (err) => {
+//     if (err) throw err;
+//     console.log("Content added successfully");
+    
+// });
+
+// fs.unlink("demo.txt", (err) => {
+//     if (err) throw err;
+//     console.log("File Deleted Successfully");
+    
+// });
+
+// const path = require("path");
+
+// console.log(path.basename(__filename));
+// console.log(path.basename(__dirname));
+
+// const filePath = path.join(__dirname, "files", "demo.txt");
+
+// console.log(filePath);
+
+// const os = require("os");
+// const { log } = require("console");
+
+// console.log(os.platform());
+// console.log(os.arch());
+// console.log(os.freemem());
+// console.log(os.totalmem());
+
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    res.write("Hello Rahul, Welcome to my world");
+    res.end();
+});
+
+server.listen(5000);
 
 
