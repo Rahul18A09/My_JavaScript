@@ -313,17 +313,61 @@
 // }
 
 
-console.log('start');
+// Event loop
 
-setTimeout(() => {
-    console.log('Timeout');
+// console.log('start');
+
+// setTimeout(() => {
+//     console.log('Timeout');
     
-}, 0);
+// }, 0);
 
-Promise.resolve().then(()=> {
-    console.log('Promise');
+// Promise.resolve().then(()=> {
+//     console.log('Promise');
     
-});
+// });
 
-console.log('End');
+// console.log('End');
+
+
+// Async/await
+
+// function fetchData(){
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve("Data received")
+//         }, 2000);
+//     });
+// }
+
+// async function getData() {
+//     console.log('Loading...');
+    
+//     const result = await fetchData();
+
+//     console.log(result);
+    
+// }
+
+// getData();
+
+
+// API-style example
+
+async function getUsers() {
+    try{
+        let response = await fetch("https://jsonplaceholder.typicode.com/users");
+        let data = await response.json();
+
+        console.log(data);
+        
+    }catch (error) {
+        console.log("Error:" , error);
+        
+    }
+}
+
+getUsers();
+
+
 
