@@ -446,10 +446,18 @@
 // }
 
 
-let i = 1;
+// let i = 1;
 
-while( i <= 5){
-    console.log('Number' + " " +  i);
-    i++;
+// while( i <= 5){
+//     console.log('Number' + " " +  i);
+//     i++;
     
-}
+// }
+
+
+let a = 1
+do {
+    console.log(a);
+    a++;
+    
+}while (a <= 5 );
