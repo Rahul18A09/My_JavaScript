@@ -7,7 +7,7 @@
 // function greet(name , callback) {
 //     console.log("Hi" + name);
 //     callback();
-    
+
 // }
 
 // const greet = function() {
@@ -18,7 +18,7 @@
 
 // function sayBye() {
 //     console.log("Bye");
-    
+
 // }
 
 // greet("Rahul", sayBye);
@@ -29,12 +29,11 @@
 
 // if( score > 35){
 //     console.log("grade A");
-    
+
 // }else {
 //     console.log("grade B");
-    
-// }
 
+// }
 
 // else/ if
 
@@ -45,14 +44,13 @@
 
 // }else if(score >= 80){
 //     console.log("B");
-    
+
 // }else if(score >= 70) {
 //     console.log("C");
-    
+
 // }else {
 //     console.log("D");
 
-    
 // }
 
 // let day = 7;
@@ -81,36 +79,33 @@
 //         break;
 //     default:
 //         console.log("Invalid day");
-         
-// }
 
+// }
 
 // loops in js
 
 // for(let i = 0; i <=10; i++){
 //     console.log(i);
-    
+
 // }
 
 // let i = 0
 // while(i <=5){
 //     console.log(i);
-//     i++   
+//     i++
 // }
-
 
 // let i = 4;
 // do{
 //     console.log(i);
-    
-// }while( i < 3);
 
+// }while( i < 3);
 
 // function in js
 
 // function sayHi() {
 //     console.log("Hello");
-    
+
 // }
 
 // sayHi();
@@ -122,7 +117,7 @@
 //     let y = 15
 //     console.log(x);
 //     console.log(y);
-    
+
 // }
 
 // test();
@@ -134,12 +129,11 @@
 //     age: 26,
 //     greet(){
 //         console.log(this.name);
-        
+
 //     }
 // };
 
 // user.greet();
-
 
 // lexical scope
 
@@ -148,7 +142,7 @@
 
 //     function inner (){
 //         console.log(x);
-        
+
 //     }
 //     inner();
 // }
@@ -161,15 +155,13 @@
 //     return function(){
 //         count ++;
 //         console.log(count);
-        
+
 //     };
 // }
 
 // const increment = counter();
 // increment();
 // increment();
-
-
 
 // Object methods
 
@@ -178,12 +170,11 @@
 //     age: 22,
 //     greet: function(){
 //         console.log("Hello" + " " + this.name);
-        
+
 //     }
 // };
 
 // user.greet();
-
 
 // Object Destructuring
 // const user = {
@@ -198,10 +189,8 @@
 
 // user.greet();
 
-
 // let key = "name";
 // console.log(user[key]);
-
 
 // const obj = {
 //     "first name": "Rahul"
@@ -209,16 +198,12 @@
 
 // console.log(obj["first name"]);
 
-
-
-
 // const {name, age, city} = user;
 // console.log(name);
 // console.log(age);
 // console.log(city):
 // const {name: username} = user;
 // console.log(username);
-
 
 // loop through Object
 
@@ -228,28 +213,23 @@
 //   city: "Ahmedabad"
 // };
 
-
 // using(for...in)
 // for (let key in user){
 //     console.log(key,  user[key]);
-    
-// }
 
+// }
 
 // using(Object.keys())
 // Object.keys(user).forEach(key => {
 //     console.log(key, user[key]);
-    
+
 // })
-
-
 
 // using(Object.entries())
 // Object.entries(user).forEach(([key, value]) => {
 //     console.log(key , value);
-    
-// });
 
+// });
 
 // DOM = Document Object Model
 
@@ -259,7 +239,6 @@
 // let element = document.getElementById("heading");
 // element.innerText = "Hello World";
 // console.log(element);
-
 
 // var, let , const
 
@@ -275,7 +254,7 @@
 // {
 //     var a = 10;
 //     console.log(a);
-    
+
 // }
 // console.log(a);
 
@@ -286,32 +265,28 @@
 // console.log(a == b);
 // console.log(a === b);
 
-
 // Hoisting
 
 // console.log(a);
 
 // var a = 15;
 
-
 // console.log(x);
 // let x = 15;
-
 
 // syaHello();  // function declaration is fully hoisted
 
 // function syaHello(){
 //     console.log("Hello rahul");
-    
+
 // }
 
 // sayHi(); // it is not a function
 
 // const sayHi = function (){
 //     console.log("Hello");
-    
-// }
 
+// }
 
 // Event loop
 
@@ -319,16 +294,15 @@
 
 // setTimeout(() => {
 //     console.log('Timeout');
-    
+
 // }, 0);
 
 // Promise.resolve().then(()=> {
 //     console.log('Promise');
-    
+
 // });
 
 // console.log('End');
-
 
 // Async/await
 
@@ -342,15 +316,14 @@
 
 // async function getData() {
 //     console.log('Loading...');
-    
+
 //     const result = await fetchData();
 
 //     console.log(result);
-    
+
 // }
 
 // getData();
-
 
 // API-style example
 
@@ -360,40 +333,39 @@
 //         let data = await response.json();
 
 //         console.log(data);
-        
+
 //     }catch (error) {
 //         console.log("Error:" , error);
-        
+
 //     }
 // }
 
 // getUsers();
-
 
 // const fs = require("fs");
 
 // fs.writeFile("demo.txt", "Hello Rahul", (err) => {
 //     if (err) throw err;
 //     console.log("File Created successfully");
-    
+
 // });
 
 //  const data = fs.readFile("demo.txt", "utf8", (err, data) => {
 //     if (err) throw err;
 //     console.log(data);
-    
+
 // });
 
 // fs.appendFile("demo.txt", "\nWelcome to Node.js", (err) => {
 //     if (err) throw err;
 //     console.log("Content added successfully");
-    
+
 // });
 
 // fs.unlink("demo.txt", (err) => {
 //     if (err) throw err;
 //     console.log("File Deleted Successfully");
-    
+
 // });
 
 // const path = require("path");
@@ -413,13 +385,56 @@
 // console.log(os.freemem());
 // console.log(os.totalmem());
 
-const http = require('http');
+// const http = require('http');
 
-const server = http.createServer((req, res) => {
-    res.write("Hello Rahul, Welcome to my world");
-    res.end();
-});
+// const server = http.createServer((req, res) => {
+//     res.write("Hello Rahul, Welcome to my world");
+//     res.end();
+// });
 
-server.listen(5000);
+// server.listen(5000);
 
+// let age = 17;
 
+// if(age >= 18) {
+//     console.log("you are able to valt");
+// }   else {
+//     console.log("you are not aligible to valt");
+
+// }
+
+// let marks = 91;
+
+// if(marks >= 90) {
+//     console.log('Grade A');
+
+// }else if(marks >=75){
+//     console.log('Grade B');
+
+// }else if(marks >= 60){
+//     console.log("Grade C");
+
+// }else{
+//     console.log('Grade D');
+
+// }
+
+// let day = 3;
+
+// switch (day) {
+//   case 1:
+//     console.log("Monday");
+//     break;
+
+//   case 2:
+//     console.log("Tuesday");
+//     break;
+
+//   case 3:
+//     console.log("Wednesday");
+//     break;
+
+//     default:
+//         console.log('Another day');
+        
+// }
