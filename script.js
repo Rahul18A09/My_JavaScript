@@ -455,9 +455,17 @@
 // }
 
 
-let a = 1
-do {
-    console.log(a);
-    a++;
+// let a = 1
+// do {
+//     console.log(a);
+//     a++;
     
-}while (a <= 5 );
+// }while (a <= 0 );
+
+
+function greetings(){
+    console.log('Good Mornong');
+    
+}
+
+greetings();
