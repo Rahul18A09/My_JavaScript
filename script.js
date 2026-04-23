@@ -463,9 +463,27 @@
 // }while (a <= 0 );
 
 
-function greetings(name){
-    return('Good Mornong' +  " " + name);
+// function greetings(name){
+//     return('Good Mornong' +  " " + name);
     
+// }
+
+// console.log(greetings("Rahul"));
+
+
+// const multiply = function (x, y){
+//     return  x * y;
+
+// }
+
+// console.log(multiply(5 ,6));
+
+
+function greetUser(name = 'guest'){
+    return "Welcome" + name;
 }
 
-console.log(greetings("Rahul"));
+console.log(greetUser("Rahul"));
+console.log(greetUser());
+
+
