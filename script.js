@@ -463,9 +463,9 @@
 // }while (a <= 0 );
 
 
-function greetings(){
-    console.log('Good Mornong');
+function greetings(name){
+    return('Good Mornong' +  " " + name);
     
 }
 
-greetings();
+console.log(greetings("Rahul"));
