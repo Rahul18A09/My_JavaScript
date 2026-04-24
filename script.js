@@ -555,19 +555,58 @@
 // console.log(isPalindrome("racecar"));
 
 
-function isPalindrome(str) {
-    str =  str.toString();
-    let reversed = str.split().reverse().join();
-    return str === reversed;
+// function isPalindrome(str) {
+//     str =  str.toString();
+//     let reversed = str.split().reverse().join();
+//     return str === reversed;
+// }
+
+
+// console.log(isPalindrome(121));
+// console.log(isPalindrome(1221));
+// console.log(isPalindrome(234234));
+
+
+// loop with Array
+
+// let arr = ['a', 'b', 'c'];
+
+// for(let i = 0; i < arr.lenght; i++){
+//     console.log(arr[i]);
+    
+// }
+
+
+// for (let val of arr){
+//     console.log(val);
+    
+// }
+
+
+// for (let i in arr) {
+//     console.log( i, arr[i]);
+    
+// }
+
+
+
+// Object
+
+let student = {
+    name: 'rahul',
+    age: 25,
+    city: "Navsari"
 }
 
 
-console.log(isPalindrome(121));
-console.log(isPalindrome(1221));
-console.log(isPalindrome(234234));
+student.class = 10;
+student.color = "blue";
 
 
+delete student.color;
+console.log(student);
 
+console.log(student.name, student.age, student.city);
 
 
 
