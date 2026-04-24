@@ -480,6 +480,7 @@
 
 // console.log(a,b);
 
+
 // Palindrome Example in JavaScript
 
 // Using reverse()

@@ -479,11 +479,99 @@
 // console.log(multiply(5 ,6));
 
 
-function greetUser(name = 'guest'){
-    return "Welcome" + name;
+// function greetUser(name = 'guest'){
+//     return "Welcome" + name;
+// }
+
+// console.log(greetUser("Rahul"));
+// console.log(greetUser());
+
+
+// Array
+
+// let nums = [10, 20, 30];
+
+// console.log(nums.length);
+// console.log(nums[0]);
+
+// nums[1] = 25;
+// nums[3] = 35;
+
+// console.log(nums);
+
+// let nums = [1,2,3,4,5,6];
+
+// console.log(nums.indexOf(2));
+// console.log(nums.lastIndexOf(5));
+// console.log(nums.includes(3));
+
+// console.log(nums.slice(0,4));   //extract values from an array
+// nums.splice(2, 1, "R");
+// console.log(nums);
+// console.log(nums.join("*"));
+
+
+// Sorting
+
+// let nums = [20, 35, 65, 80, 100, 73];
+
+// nums.sort();
+// nums.sort((a,b) => a -b);
+
+// console.log(nums);
+
+
+// Loop With Array
+
+// let  a = 15;
+// let  b = 20;
+
+
+// method1
+// a = a + b;  //35
+// b = a - b; //15
+// a = a - b; //20
+
+// console.log(a);
+// console.log(b);
+
+// console.log(a, b);
+
+
+// method 2
+
+// [a,b] = [b,a];
+
+// console.log(a ,b);
+
+
+// function isPalindrome(str){
+//     let reversed = str.split("").reverse().join("");
+//     return str === reversed;
+// }
+
+// console.log(isPalindrome("hello"));
+// console.log(isPalindrome("madam"));
+// console.log(isPalindrome("racecar"));
+
+
+function isPalindrome(str) {
+    str =  str.toString();
+    let reversed = str.split().reverse().join();
+    return str === reversed;
 }
 
-console.log(greetUser("Rahul"));
-console.log(greetUser());
+
+console.log(isPalindrome(121));
+console.log(isPalindrome(1221));
+console.log(isPalindrome(234234));
+
+
+
+
+
+
+
+
 
 
