@@ -8,22 +8,52 @@
 </head>
 
 <style>
+    .container {
+        width: 900px;
+        height: 700px;
+        background-color: azure;
+    }
 
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 600px;
+        background-color: aquamarine;
+    }
+
+    .card-img img{
+        width: 90%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        width: 80%;
+    }
 </style>
 
 <body>
 
 
-    <section class="container">
+    <section>
         <div>
             <h1 id="title">JavaScript</h1>
         </div>
 
-        <h2 id="heading">Welome</h2>
-        <p class="text">Hello</p>
+        <h2 id="heading" style="color: red;">Welome</h2>
+        <p class="text" style="border-bottom: 2px solid blue;">Hello</p>
 
         <p>Lorem <b>ipsum</b> dolor, sit <strong>amet</strong> consectetur adipisicing elit. Consequatur, alias.</p>
-        <p>Loremi <i>ipsum</i>dolor sit <em>amet</em>  consectetur adipisicing elit. Veritatis quia placeat voluptates fugiat esse recusandae.</p>
+        <p>Loremi <i>ipsum</i>dolor sit <em>amet</em> consectetur adipisicing elit. Veritatis quia placeat voluptates
+            fugiat esse recusandae.</p>
     </section>
 
 
@@ -48,9 +78,25 @@
         </table>
     </section>
 
+    <section class="container">
+        <div class="card">
+            <div class="card-img">
+                <img src="/amazing_animals (11).jpg" alt="horse_img" width="100%" height="100%">
+            </div>
+            <div class="card-content">
+                <h2>Horse</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, quibusdam ipsam. Ipsa aut sunt
+                    dicta, quam sapiente odio magnam at quos temporibus suscipit atque. Ullam!
+                </p>
+                <p>Auther@Rahul</p>
+            </div>
+        </div>
+    </section>
+
 
     <script src="./script.js"></script>
     <script src="./script1.js"></script>
+    <script src="./script2.js"></script>
 </body>
 
 </html>

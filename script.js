@@ -592,21 +592,27 @@
 
 // Object
 
-let student = {
-    name: 'rahul',
-    age: 25,
-    city: "Navsari"
-}
+// let student = {
+//     name: 'rahul',
+//     age: 25,
+//     city: "Navsari"
+// }
 
 
-student.class = 10;
-student.color = "blue";
+// student.class = 10;
+// student.color = "blue";
 
 
-delete student.color;
-console.log(student);
+// delete student.color;
+// console.log(student);
 
-console.log(student.name, student.age, student.city);
+// console.log(student.name, student.age, student.city);
+
+// let p = document.createElement('p');
+// p.innerText = 'New Paragraph';
+// document.body.appendChild(p);
+
+
 
 
 
