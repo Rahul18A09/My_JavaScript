@@ -4,11 +4,21 @@
 
 // "Hello";
 
-function reverseString(str) {
-return str.split('').reverse().join('');
+// function reverseString(str) {
+// return str.split('').reverse().join('');
 
+// }
+
+// console.log(reverseString("hello"));
+
+
+// 2. Chech panlindrome
+
+function isPalindrome(str){
+    let reversed = str.split('').reverse().join('');
+    return str === reversed;
 }
 
-console.log(reverseString("hello"));
-
-
+console.log(isPalindrome("level"));
+console.log(isPalindrome("hello"));
+console.log(isPalindrome("racecar"));
