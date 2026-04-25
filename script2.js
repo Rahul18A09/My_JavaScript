@@ -11,7 +11,6 @@
 
 // console.log(reverseString("hello"));
 
-
 // 2. Chech panlindrome
 
 // function isPalindrome(str){
@@ -33,7 +32,6 @@
 
 // console.log(maxNum(arr));
 
-
 // 4. Remove Duplicates from an array
 
 // let arr = [1,2,2,3,4,4,5];
@@ -46,16 +44,27 @@
 
 // 5. count occurences of Characters
 
-let word = "apple";
+// let word = "apple";
 
-function countChars(str){
-    let obj = {};
-    for (let char of str){
-        obj[char] = (obj[char] || 0) + 1;
-    }
+// function countChars(str){
+//     let obj = {};
+//     for (let char of str){
+//         obj[char] = (obj[char] || 0) + 1;
+//     }
 
-    return obj;
+//     return obj;
+// }
+
+// console.log(countChars(word));
+
+// 6. FizzBuzz
+let i = 0;
+for ( let i = 1; i <= 100; i++){
+    if( i % 15 === 0)
+        console.log("FizzBuzz");
+     else if (i % 3 === 0)
+        console.log("Fizz");
+      else if (i % 5 === 0)
+        console.log("Buzz");
+       else console.log(i);          
 }
-
-console.log(countChars(word));
-
