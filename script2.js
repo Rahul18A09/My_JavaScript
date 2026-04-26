@@ -98,22 +98,78 @@
 
 // 9.  promise
 
-const promise = new Promise((resolve, reject) => {
-  let success = true;
+// const promise = new Promise((resolve, reject) => {
+//   let success = true;
 
-  if(success) {
-resolve("Task Completed");
-  }else {
-    reject("Task Failed");
+//   if(success) {
+// resolve("Task Completed");
+//   }else {
+//     reject("Task Failed");
+//   }
+// });
+
+// promise.then((result) => {
+//   console.log(result);
+  
+// }).catch((error) => {
+//   console.log("Error:" , error);
+  
+// });
+
+// 10. Async/await
+
+// async function getData() {
+//   try {
+//     const data = await fetchData();
+//     console.log(data);
+    
+//   }catch(error) {
+//     console.log(error);
+    
+//   }
+// }
+
+// getData();
+
+// start petterns
+
+// 1. Basic Square patttern
+
+// let n = 4;
+
+// for (let i = 1; i <= n; i++) {
+//   let row = '';
+//   for(let j = 1; j <= n; j++){
+//   row += '* ';
+//   }
+//   console.log(row);
+  
+// }
+
+// 2.Right Triangle Pattern
+
+// let n = 4;
+
+// for(let i = 1; i <= n; i++){
+//   let row = '';
+//   for(let j = 1; j <= i; j++){
+//     row += '* ';
+//   }
+
+//   console.log(row);
+  
+// }
+
+// 3. Inverted Triangle
+
+let n = 4;
+
+for (let i = n; i >= 1; i--){
+  let row = '';
+  for(let j = 1; j <= i; j++){
+    row += '* ';
   }
-});
-
-promise.then((result) => {
-  console.log(result);
+  console.log(row);
   
-}).catch((error) => {
-  console.log("Error:" , error);
-  
-});
-
+}
 
