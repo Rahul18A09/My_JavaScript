@@ -58,13 +58,62 @@
 // console.log(countChars(word));
 
 // 6. FizzBuzz
-let i = 0;
-for ( let i = 1; i <= 100; i++){
-    if( i % 15 === 0)
-        console.log("FizzBuzz");
-     else if (i % 3 === 0)
-        console.log("Fizz");
-      else if (i % 5 === 0)
-        console.log("Buzz");
-       else console.log(i);          
-}
+// let i = 0;
+// for ( let i = 1; i <= 100; i++){
+//     if( i % 15 === 0)
+//         console.log("FizzBuzz");
+//      else if (i % 3 === 0)
+//         console.log("Fizz");
+//       else if (i % 5 === 0)
+//         console.log("Buzz");
+//        else console.log(i);          (
+// }
+
+
+
+
+// 7. flatten Array
+
+// let arr = [1,[2,[3,4, [5,6,[7,8,9]]]]];
+
+// function flatten(arr){
+//   return arr.flat(Infinity);
+// }
+
+// console.log(flatten(arr));
+
+
+// 8.find Missing Number
+
+// let arr = [1,2,3,5,6,8,10];
+
+// function missingNum(arr) {
+//   let n = arr.length + 1 ;
+//   let total = (n * (n + 1)) / 2;
+//   let sum = arr.reduce((a, b) => a + b , 0);
+//   return total - sum ;
+// }
+
+// console.log(missingNum(arr));
+
+// 9.  promise
+
+const promise = new Promise((resolve, reject) => {
+  let success = true;
+
+  if(success) {
+resolve("Task Completed");
+  }else {
+    reject("Task Failed");
+  }
+});
+
+promise.then((result) => {
+  console.log(result);
+  
+}).catch((error) => {
+  console.log("Error:" , error);
+  
+});
+
+

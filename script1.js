@@ -635,3 +635,15 @@
 // console.log(result);
 
 
+// console.log("start");
+
+// setTimeout(() => {
+//     console.log("Timeout");
+    
+// }, 1000);
+
+// Promise.resolve().then(() => console.log("Promise"));
+
+// console.log("End");
+
+
