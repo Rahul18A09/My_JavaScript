@@ -173,3 +173,87 @@
 //   console.log(row);
   
 // }
+
+// 4. Pyramid pattern
+
+// let n = 4
+
+// for(let i = 1; i <= n; i++){
+//   let row = '';
+
+//   // spaces
+//   for(let j = 1; j <= n - i; j++){
+//     row += ' ';
+//   }
+
+//   // stars
+//   for(let k = 1; k <= i; k++){
+//     row += '* ';
+//   }
+
+//   console.log(row);
+  
+// }
+
+
+// 5. Inverted Pyramid Pattern
+
+// let n = 4;
+
+// for(let i = n; i >= 1; i--){
+//   let row = '';
+
+//   // spaces
+//   for(let j = 1; j <= n - i; j++){
+//     row += ' ';
+//   }
+
+//   // stars
+//   for (let k = 1; k <= i ; k++){
+//     row += "* ";
+//   }
+
+//   console.log(row);
+  
+// }
+
+// 6. Diamond pattern
+
+let n = 4;
+
+// upper part
+
+for(let i = 1; i <= n; i++){
+  let row = '';
+
+  // spaces
+  for(let j = 1; j <= n-i; j++){
+    row += ' ';
+  }
+
+  // stars
+
+  for(let k = 1; k <= i; k++){
+    row += '* ';
+  }
+  console.log(row);
+  
+}
+
+// lower part
+for (let i = n - 1; i >= 1; i--){
+  let row = '';
+
+  // spaces
+for( let j = 1; j <= n-i; j++){
+  row += ' ';
+}
+
+// stars
+for(let k = 1; k <= i; k++){
+  row += '* ';
+}
+
+console.log(row);
+
+}
