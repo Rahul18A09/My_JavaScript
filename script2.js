@@ -353,3 +353,60 @@ console.log(row);
 //   console.log(row);
   
 // }
+
+
+// map
+
+
+// const prices = [10, 20, 30 ,35];
+
+// const finalPrices = prices.map((price) => price* 1.5);
+
+// console.log(finalPrices);
+
+
+// extract names from this object
+
+// const users = [
+//     {name :  "rahul", age: 25},
+//     {name : "Asha", age: 24}
+// ];
+
+// const names = users.map((user) => user.name);
+
+// console.log(names);
+
+
+
+// Filter
+
+// get event numbers only
+
+// const number = [1,2,3,4,5,6];
+
+// const even = number.filter((num) => num % 2 === 0);
+
+// console.log(even);
+
+// get odd numbers only
+
+// const number = [1,2,3,4,5,6];
+
+// const oddnum =number.filter((num) =>  num % 2 !== 0);
+
+// console.log(oddnum);
+
+
+// Active users
+
+const users = [
+    {name: "rahul", active: true},
+    {name: "asha", active: false}
+];
+
+const activeUsers = users.filter((user) => user.active);
+
+console.log(activeUsers);
+
+
+
