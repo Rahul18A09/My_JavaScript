@@ -235,24 +235,24 @@
 
 // 5. Inverted Pyramid Pattern
 
-let n = 4;
+// let n = 4;
 
-for (let i = n ; i >= 1; i--){
-    let row  = "";
+// for (let i = n ; i >= 1; i--){
+//     let row  = "";
 
-    // spaces
-for(let j = 1; j <= n-i; j++){
-    row +=" ";
-}
+//     // spaces
+// for(let j = 1; j <= n-i; j++){
+//     row +=" ";
+// }
 
-// stars
+// // stars
 
-for(let k = 1; k <= i; k++){
-    row += '* ';
-}
-console.log(row);
+// for(let k = 1; k <= i; k++){
+//     row += '* ';
+// }
+// console.log(row);
 
-}
+// }
 
 // 6. Diamond pattern
 
@@ -434,4 +434,5 @@ console.log(row);
 // console.log(counter());
 // console.log(counter());
 // console.log(counter());
+
 
