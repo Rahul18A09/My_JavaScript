@@ -2,6 +2,8 @@
 // console.log("JavaScript Revision");
 // console.error("Something went wrong!");
 
+const { log } = require("node:console");
+
 // Callback function
 
 // function greet(name , callback) {
@@ -613,8 +615,30 @@
 // document.body.appendChild(p);
 
 
+// let arr  = [10, 22, 35, 41, 52];
 
 
+// const bigNum = arr.find(num => num > 20);
+
+// console.log(bigNum);
+
+// const users = [
+//     {id:1, name: 'rahul', age: 25},
+//   {id:2, name: 'asha', age: 22}
+// ];
+
+
+// const user = users.find(user => user.id === 2);
+
+// console.log(user);
+
+
+const fruits = ['apple', 'grabs', 'banana', 'mango'];
+
+const result = fruits.forEach((fruit, index) => {
+    console.log(index, fruit);
+    
+});
 
 
 

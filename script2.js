@@ -399,14 +399,39 @@ console.log(row);
 
 // Active users
 
-const users = [
-    {name: "rahul", active: true},
-    {name: "asha", active: false}
-];
+// const users = [
+//     {name: "rahul", active: true},
+//     {name: "asha", active: false}
+// ];
 
-const activeUsers = users.filter((user) => user.active);
+// const activeUsers = users.filter((user) => user.active);
 
-console.log(activeUsers);
+// console.log(activeUsers);
 
 
+// reduce
+
+// const cart = [10, 20, 30];
+
+// const total = cart.reduce((sum, price) => sum + price, 0);
+
+// console.log(total);
+
+
+// Clouser
+
+// function outer(){
+//     let count = 0;
+
+//     return function inner(){
+//         count++;
+//         return count;
+//     }
+// }
+
+// const counter = outer();
+
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
 
