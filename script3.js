@@ -47,11 +47,20 @@
 
 // os
 
-const { log } = require('console');
-const os = require('os');
+// const { log } = require('console');
+// const os = require('os');
 
-console.log(os.platform());
-console.log(os.cpus());
-console.log(os.freemem());
+// console.log(os.platform());
+// console.log(os.cpus());
+// console.log(os.freemem());
+
+
+function isPanildrome(str){
+    let reversed = str.split('').reverse().join('');
+    return str === reversed;
+}
+
+console.log(isPanildrome("hello"));
+console.log(isPanildrome("level"));
 
 
