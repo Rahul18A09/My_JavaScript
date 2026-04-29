@@ -45,5 +45,13 @@
 // console.log(path.basename(__filename));
 // console.log(path.extname(__filename));
 
+// os
+
+const { log } = require('console');
+const os = require('os');
+
+console.log(os.platform());
+console.log(os.cpus());
+console.log(os.freemem());
 
 
