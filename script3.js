@@ -55,12 +55,22 @@
 // console.log(os.freemem());
 
 
-function isPanildrome(str){
-    let reversed = str.split('').reverse().join('');
-    return str === reversed;
+// function isPanildrome(str){
+//     let reversed = str.split('').reverse().join('');
+//     return str === reversed;
+// }
+
+// console.log(isPanildrome("hello"));
+// console.log(isPanildrome("level"));
+
+let n = 4;
+
+for (let i = 1; i <= n; i++){
+    let row = '';
+    for(j = 1; j <= n; j++){
+        row += '* ';
+    }
+
+    console.log(row);
+    
 }
-
-console.log(isPanildrome("hello"));
-console.log(isPanildrome("level"));
-
-
