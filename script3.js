@@ -63,11 +63,28 @@
 // console.log(isPanildrome("hello"));
 // console.log(isPanildrome("level"));
 
+// let n = 4;
+
+// for (let i = 1; i <= n; i++){
+//     let row = '';
+//     for(j = 1; j <= n; j++){
+//         row += '* ';
+//     }
+
+//     console.log(row);
+    
+// }
+
+
+
+// star pattern
+
 let n = 4;
 
-for (let i = 1; i <= n; i++){
+for(let i = 1; i <= n ; i++){
     let row = '';
-    for(j = 1; j <= n; j++){
+
+    for(let j = 1; j<= n; j++){
         row += '* ';
     }
 
